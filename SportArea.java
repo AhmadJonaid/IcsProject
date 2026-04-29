@@ -21,10 +21,10 @@ public class SportArea extends Venue{
         showBasicInfo();
         System.out.println("Sport type |"+getSportType());
         if(getOutdoor()){
-        System.out.println("Area type? "+"Outdoor");
+        System.out.println("Area type: "+"Outdoor");
         }
         else{
-            System.out.println("Area type? "+"Indoor");
+            System.out.println("Area type: "+"Indoor");
         }
     }
 }
