@@ -1,4 +1,5 @@
-public class Event {
+
+public abstract class Event {
 private String name;
 private int startTime;
 private int endTime;
@@ -14,14 +15,24 @@ public Event(String name, int startTime, int endTime, String venue,String depart
 	this.venue = venue;
 	this.department = department;
 }
-public void printEvent(){
-	System.out.println("Event name: " + name);
-	System.out.println("Start time: " + startTime);
-	System.out.println("End time: " + endTime);
-	
-	System.out.println("venue: " + venue);
-	System.out.println("department: " + department);
+public String getName() {
+	return name;
 }
+public int getStartTime() {
+	return startTime;
+}
+public int getEndTime() {
+	return endTime;
+}
+public String getVenue() {
+	return venue;
+}
+public String getDepartment() {
+	return department;
+}
+
+
+
 //checks if start time before end time
 public boolean checkTime() {
 	if(startTime < endTime) {
@@ -32,4 +43,7 @@ public boolean checkTime() {
 	}
 	
 }
+public abstract String toString();
 }
+
+
