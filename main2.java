@@ -22,7 +22,7 @@ public class main{
 			String eventName = scnr.nextLine();
 			System.out.println("Enter start time, example 2026-5-10 14:30: ");
 			String startTime = scnr.nextLine();
-			System.out.println("Enter end time, 2026-5-10 15:30: ");
+			System.out.println("Enter end time, example 2026-5-10 15:30: ");
 			String endTime = scnr.nextLine();
 			
 			System.out.println("Enter department name: ");
